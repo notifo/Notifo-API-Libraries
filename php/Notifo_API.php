@@ -10,6 +10,7 @@ class Notifo_API {
   private $API_SUBSCRIBE_USER_METHOD = "/subscribe_user";
   private $API_SEND_NOTIFICATION_METHOD = "/send_notification";
 
+  /* class constructor */
   function Notifo_API($apiusername = "", $apisecret = "") {
     $this->apiusername = $apiusername;
     $this->apisecret = $apisecret;
@@ -23,6 +24,13 @@ class Notifo_API {
     $this->apisecret = $val;
   }
 
+  /*
+   * function: send_notification
+   * @param: $params - an associative array of parameters to send to the Notifo API.
+   *                   These can be any of the following:
+   *                   to, msg, label, title, uri
+   *                   See https://api.notifo.com/ for more information
+   */
   function send_notification($params) {
     
     $data = "";
@@ -47,7 +55,12 @@ class Notifo_API {
 
     return $response;
   } /* end function api_send_notification */
-  
+
+  /*
+   * function: subscribe_user
+   * @param: $username - the username to subscribe to your Notifo service
+   *                     See https://api.notifo.com/ for more information
+   */
   function subscribe_user($username) {
     
     $data = "username=" . $username;
@@ -59,6 +72,7 @@ class Notifo_API {
     return $response;
   } /* end function api_subscribe_user */
 
+  /* helper function to send the requests */
   function send_request($url, $type, $data) {
 
     $ch = curl_init();
