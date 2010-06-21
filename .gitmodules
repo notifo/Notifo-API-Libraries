@@ -1,0 +1,3 @@
+[submodule "dotNET/Exyll.Notifo"]
+	path = dotNET/Exyll.Notifo
+	url = git@github.com:ramonsmits/Exyll.Notifo.git
