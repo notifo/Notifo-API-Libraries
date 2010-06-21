@@ -1,3 +1,6 @@
 [submodule "dotNET/Exyll.Notifo"]
 	path = dotNET/Exyll.Notifo
 	url = git@github.com:ramonsmits/Exyll.Notifo.git
+[submodule "dotNET/FoSharp"]
+	path = dotNET/FoSharp
+	url = http://github.com/johnsheehan/FoSharp.git
