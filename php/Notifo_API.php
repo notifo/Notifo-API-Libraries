@@ -9,6 +9,7 @@ class Notifo_API {
   private $API_VER  = "v1";
   private $API_SUBSCRIBE_USER_METHOD = "/subscribe_user";
   private $API_SEND_NOTIFICATION_METHOD = "/send_notification";
+  private $API_SEND_MESSAGE_METHOD = "/send_message";
 
   /* class constructor */
   function Notifo_API($apiusername = "", $apisecret = "") {
@@ -23,6 +24,23 @@ class Notifo_API {
   function set_apisecret($val) {
     $this->apisecret = $val;
   }
+
+  /*
+   * function: send_message
+   * @param: $to - handle of the recipient
+   *         $message - what you want to send them          
+   *                   
+   */
+	function send_message($to, $message) {
+		$data = "";
+		$to = urlencode($to);
+		$message = urlencode($message);
+		$data .= "to=${to}&msg=${message}";
+
+    $api_url = $this->API_ROOT . $this->API_VER . $this->API_SEND_NOTIFICATION_METHOD;
+    $response = $this->send_request($api_url, "POST", $data);
+    return $response;
+	}
 
   /*
    * function: send_notification
