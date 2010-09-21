@@ -62,3 +62,5 @@ class Notifo_API {
   function subscribe_user($username) { return json_encode($this->subscribeUser($username)); }
   
 } /* end class Notifo_API */
+
+?>
