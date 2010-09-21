@@ -74,7 +74,7 @@ class Notifo_API {
 // for backwards compatibility
   function send_notification($params) { return json_encode($this->sendNotification($params)); }
   function subscribe_user($username) { return json_encode($this->subscribeUser($username)); }
-  function send_request($url, $type, $data) { return $this->sendRequest($method, $type, $data); }
+  function send_request($url, $type, $data) { return json_encode($this->sendRequest($method, $type, $data)); }
 
 } /* end class Notifo_API */
 
