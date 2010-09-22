@@ -66,6 +66,15 @@ class Notifo_API {
     }
     curl_setopt($ch, CURLOPT_USERPWD, $this->apiUsername.':'.$this->apiSecret);
     curl_setopt($ch, CURLOPT_HEADER, false);
+
+    /*
+     * if you are on a shared host or do not have access to install
+     * the root CA certificates on your server, uncomment the next
+     * two lines or the curl_exec call may fail with null
+     */
+    //curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    //curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+
     $result = curl_exec($ch);
     $result = json_decode($result, true);
     return $result;
