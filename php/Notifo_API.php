@@ -37,6 +37,12 @@ class Notifo_API {
     return $this->sendRequest('send_notification', 'POST', $params);
   } /* end function sendNotification */
 
+  function sendMessage($params) {
+    $validFields = array('to','msg');
+    $params = array_intersect_key($params, array_flip($validFields));
+    return $this->sendRequest('send_message', 'POST', $params);
+  }
+
   /**
    * function: subscribeUser
    * @param: $username - the username to subscribe to your Notifo service
@@ -62,7 +68,7 @@ class Notifo_API {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     if ($type == "POST") {
       curl_setopt($ch, CURLOPT_POST, true);
-      curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+      curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
     }
     curl_setopt($ch, CURLOPT_USERPWD, $this->apiUsername.':'.$this->apiSecret);
     curl_setopt($ch, CURLOPT_HEADER, false);
@@ -82,6 +88,7 @@ class Notifo_API {
 
 // for backwards compatibility
   function send_notification($params) { return json_encode($this->sendNotification($params)); }
+  function send_message($params) { return json_encode($this->sendMessage($params)); }
   function subscribe_user($username) { return json_encode($this->subscribeUser($username)); }
   function send_request($url, $type, $data) { return json_encode($this->sendRequest($method, $type, $data)); }
 
