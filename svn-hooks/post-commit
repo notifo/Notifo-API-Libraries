@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Notify of a commit
+# Andre Bluehs - 6/19/2010 - hello@andrebluehs.net
+#
+# Uses the service Notifo (http://notifo.com)
+# For more examples, check http://api.notifo.com
+
+# first we set paths
+SVNLOOK="/usr/bin/svnlook"
+CURL="/usr/bin/curl"
+AWK="/bin/awk"
+PERL="/usr/bin/perl"
+
+# now your notifo credentials and url to send do (currently using v1 of api):
+NAME="<yourusername>"
+APISECRET="<yourapisecretkey>"
+URL="https://api.notifo.com/v1/send_notification"
+TITLE="Title"
+LABEL="Label"
+
+# get information from svn
+PATH="$1"
+REVISION="$2"
+AUTHOR=`$SVNLOOK author $PATH -r $REVISION`
+MESSAGE=`$SVNLOOK info $PATH -r $REVISION | $AWK '{ if (NR >= 4) print }'`
+
+# if message blank, use "no message". 
+# else enclose in quotes
+if [ -z "$MESSAGE" ]; then
+	MESSAGE="with no message"
+else
+	MESSAGE="with message: $MESSAGE"
+fi
+
+# url encode message with perl
+URLMESSAGE=`$PERL -MURI::Escape -e 'print uri_escape($ARGV[0]);' "$MESSAGE"`
+
+# message, title
+MSG="msg=Version+$REVISION+by+$AUTHOR+$URLMESSAGE&title=$TITLE&label=$LABEL"
+
+# and away it goes!
+$CURL -k -u $NAME:$APISECRET -d $MSG $URL > /dev/null 
+
