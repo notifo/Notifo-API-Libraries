@@ -5,6 +5,8 @@ class Notifo_API {
   const API_ROOT = 'https://api.notifo.com/';
   const API_VER = 'v1';
 
+  const CURL_TIMEOUT = 20;
+
   protected $apiUsername;
   protected $apiSecret;
 
@@ -72,19 +74,36 @@ class Notifo_API {
     }
     curl_setopt($ch, CURLOPT_USERPWD, $this->apiUsername.':'.$this->apiSecret);
     curl_setopt($ch, CURLOPT_HEADER, false);
-
+    curl_setopt($ch, CURLOPT_TIMEOUT, self::CURL_TIMEOUT); 
+    
     /*
      * if you are on a shared host or do not have access to install
      * the root CA certificates on your server, uncomment the next
      * two lines or the curl_exec call may fail with null
      */
-    //curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-    //curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+    // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    // curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
 
     $result = curl_exec($ch);
+    $this->checkForCurlErrors($ch);
     $result = json_decode($result, true);
     return $result;
   } /* end function sendRequest */
+
+  /**
+   * helper function check/throw exception
+   * @param string $ch 
+   * @return void
+   * @throws exception containing curl errors.
+   */
+  function checkForCurlErrors($ch) {
+    if(curl_errno($ch)) {
+      $msg = curl_error($ch);
+	  $code = curl_errno($ch);
+      curl_close($ch);
+      throw new Exception($msg, $code);
+    }
+  }
 
 // for backwards compatibility
   function send_notification($params) { return json_encode($this->sendNotification($params)); }
