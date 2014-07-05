@@ -1,0 +1,51 @@
+TNotifoObjC
+v7
+r1
+
+N/Users/Grenon/Documents/MotionMobs/NotifoObjC/MainWindow.xib
+c000000004CDE3CFD0000000000004E4D
+t1289633021
+s20045
+
+N/Users/Grenon/Documents/MotionMobs/NotifoObjC/NotifoObjCViewController.xib
+c000000004CDE3CFD0000000000001A51
+t1289633021
+s6737
+
+N/Users/Grenon/Documents/MotionMobs/NotifoObjC/build/Debug/NotifoObjC.app
+t2
+s0
+
+N/Users/Grenon/Documents/MotionMobs/NotifoObjC/build/Debug/NotifoObjC.app/Contents/Info.plist
+t2
+s0
+
+N/Users/Grenon/Documents/MotionMobs/NotifoObjC/build/Debug/NotifoObjC.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/Grenon/Documents/MotionMobs/NotifoObjC/build/Debug/NotifoObjC.app/Contents/Resources/MainWindow.nib
+t2
+s0
+
+N/Users/Grenon/Documents/MotionMobs/NotifoObjC/build/Debug/NotifoObjC.app/Contents/Resources/NotifoObjCViewController.nib
+t2
+s0
+
+NNotifoObjC-Info.plist
+c000000004CDE3CFD000000000000038D
+t1289633021
+s909
+
+CCompileXIB /Users/Grenon/Documents/MotionMobs/NotifoObjC/MainWindow.xib
+r0
+
+CCompileXIB /Users/Grenon/Documents/MotionMobs/NotifoObjC/NotifoObjCViewController.xib
+r0
+
+CProcessInfoPlistFile /Users/Grenon/Documents/MotionMobs/NotifoObjC/build/Debug/NotifoObjC.app/Contents/Info.plist NotifoObjC-Info.plist
+r0
+
+CTouch /Users/Grenon/Documents/MotionMobs/NotifoObjC/build/Debug/NotifoObjC.app
+r0
+

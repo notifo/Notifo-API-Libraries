@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* NotifoObjCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* NotifoObjCAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* NotifoObjCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* NotifoObjCViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* NotifoObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* NotifoObjCViewController.m */; };
+		484AB6BA128E774A00ADB9F5 /* NotifoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 484AB6B9128E774A00ADB9F5 /* NotifoClient.m */; };
+		486C9232128F3BAB000052EB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486C9231128F3BAB000052EB /* CFNetwork.framework */; };
+		486C923B128F3BD7000052EB /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 486C923A128F3BD7000052EB /* libz.1.2.3.dylib */; };
+		486C923D128F3BE3000052EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486C923C128F3BE3000052EB /* SystemConfiguration.framework */; };
+		486C9241128F3BEE000052EB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486C9240128F3BEE000052EB /* MobileCoreServices.framework */; };
+		486C9329128F4FFF000052EB /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 486C9328128F4FFF000052EB /* libxml2.dylib */; };
+		486C9333128F52D7000052EB /* NotifoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 486C9332128F52D7000052EB /* NotifoResponse.m */; };
+		486C9440128F678E000052EB /* NotifoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 486C943F128F678E000052EB /* NotifoRequest.m */; };
+		486C944C128F68C5000052EB /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 486C944B128F68C5000052EB /* libobjc.A.dylib */; };
+		48CADF9D13A4618A006A21BD /* UINavigationBar+CustomBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CADF9C13A4618A006A21BD /* UINavigationBar+CustomBackground.m */; };
+		48CADFA113A46480006A21BD /* notifotop.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CADF9F13A46480006A21BD /* notifotop.png */; };
+		48CADFE313A4699C006A21BD /* notifobottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CADFE213A4699C006A21BD /* notifobottom.png */; };
+		48CADFEE13A46BA5006A21BD /* SendNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CADFEC13A46BA5006A21BD /* SendNotificationController.m */; };
+		48CADFEF13A46BA5006A21BD /* SendNotificationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48CADFED13A46BA5006A21BD /* SendNotificationController.xib */; };
+		48CADFF313A4701D006A21BD /* notifotopbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 48CADFF213A4701D006A21BD /* notifotopbar.png */; };
+		48CADFF713A47185006A21BD /* SubscribeUserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CADFF513A47185006A21BD /* SubscribeUserController.m */; };
+		48CADFF813A47185006A21BD /* SubscribeUserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48CADFF613A47185006A21BD /* SubscribeUserController.xib */; };
+		48CADFFC13A471A9006A21BD /* SendMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CADFFA13A471A9006A21BD /* SendMessageController.m */; };
+		48CADFFD13A471A9006A21BD /* SendMessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48CADFFB13A471A9006A21BD /* SendMessageController.xib */; };
+		48CAE00513A476C0006A21BD /* SubscribeUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CAE00413A476C0006A21BD /* SubscribeUserRequest.m */; };
+		48CAE00813A47722006A21BD /* SendNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CAE00713A47722006A21BD /* SendNotificationRequest.m */; };
+		48CAE00B13A477CA006A21BD /* SendMessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CAE00A13A477CA006A21BD /* SendMessageRequest.m */; };
+		48CF012513A4560400B0E4B4 /* UIColor+DigitalColorMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF012413A4560400B0E4B4 /* UIColor+DigitalColorMeter.m */; };
+		48CF013C13A4569100B0E4B4 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF012613A4569100B0E4B4 /* ASIAuthenticationDialog.m */; };
+		48CF013D13A4569100B0E4B4 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF012713A4569100B0E4B4 /* ASIDataDecompressor.m */; };
+		48CF013E13A4569100B0E4B4 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF012813A4569100B0E4B4 /* ASIFormDataRequest.m */; };
+		48CF013F13A4569100B0E4B4 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF012913A4569100B0E4B4 /* ASIDataCompressor.m */; };
+		48CF014013A4569100B0E4B4 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF012A13A4569100B0E4B4 /* ASIInputStream.m */; };
+		48CF014113A4569100B0E4B4 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF012B13A4569100B0E4B4 /* ASIHTTPRequest.m */; };
+		48CF014213A4569100B0E4B4 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF012D13A4569100B0E4B4 /* ASIDownloadCache.m */; };
+		48CF014313A4569100B0E4B4 /* ReachabilityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF013813A4569100B0E4B4 /* ReachabilityHelper.m */; };
+		48CF014413A4569100B0E4B4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF013913A4569100B0E4B4 /* Reachability.m */; };
+		48CF015E13A4574300B0E4B4 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF014913A4574300B0E4B4 /* CDataScanner.m */; };
+		48CF015F13A4574300B0E4B4 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF014C13A4574300B0E4B4 /* CDataScanner_Extensions.m */; };
+		48CF016013A4574300B0E4B4 /* NSCharacterSet_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF014E13A4574300B0E4B4 /* NSCharacterSet_Extensions.m */; };
+		48CF016113A4574300B0E4B4 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF015013A4574300B0E4B4 /* NSDictionary_JSONExtensions.m */; };
+		48CF016213A4574300B0E4B4 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF015213A4574300B0E4B4 /* NSScanner_Extensions.m */; };
+		48CF016313A4574300B0E4B4 /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF015513A4574300B0E4B4 /* CJSONDataSerializer.m */; };
+		48CF016413A4574300B0E4B4 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF015713A4574300B0E4B4 /* CJSONDeserializer.m */; };
+		48CF016513A4574300B0E4B4 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF015913A4574300B0E4B4 /* CJSONScanner.m */; };
+		48CF016613A4574300B0E4B4 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF015B13A4574300B0E4B4 /* CJSONSerializer.m */; };
+		48CF016713A4574300B0E4B4 /* CSerializedJSONData.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CF015D13A4574300B0E4B4 /* CSerializedJSONData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* NotifoObjCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifoObjCAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* NotifoObjCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifoObjCAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* NotifoObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifoObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* NotifoObjCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NotifoObjCViewController.xib; path = ../NotifoObjCViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* NotifoObjCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifoObjCViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* NotifoObjCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifoObjCViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* NotifoObjC_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifoObjC_Prefix.pch; sourceTree = "<group>"; };
+		484AB6B8128E774A00ADB9F5 /* NotifoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifoClient.h; sourceTree = "<group>"; };
+		484AB6B9128E774A00ADB9F5 /* NotifoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifoClient.m; sourceTree = "<group>"; };
+		486C9231128F3BAB000052EB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		486C923A128F3BD7000052EB /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		486C923C128F3BE3000052EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		486C9240128F3BEE000052EB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		486C9328128F4FFF000052EB /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		486C9331128F52D7000052EB /* NotifoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifoResponse.h; sourceTree = "<group>"; };
+		486C9332128F52D7000052EB /* NotifoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifoResponse.m; sourceTree = "<group>"; };
+		486C943E128F678E000052EB /* NotifoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifoRequest.h; sourceTree = "<group>"; };
+		486C943F128F678E000052EB /* NotifoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifoRequest.m; sourceTree = "<group>"; };
+		486C944B128F68C5000052EB /* libobjc.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.A.dylib; path = usr/lib/libobjc.A.dylib; sourceTree = SDKROOT; };
+		48CADF9B13A4618A006A21BD /* UINavigationBar+CustomBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+CustomBackground.h"; sourceTree = "<group>"; };
+		48CADF9C13A4618A006A21BD /* UINavigationBar+CustomBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+CustomBackground.m"; sourceTree = "<group>"; };
+		48CADF9F13A46480006A21BD /* notifotop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifotop.png; sourceTree = "<group>"; };
+		48CADFE213A4699C006A21BD /* notifobottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifobottom.png; sourceTree = "<group>"; };
+		48CADFEB13A46BA5006A21BD /* SendNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendNotificationController.h; sourceTree = "<group>"; };
+		48CADFEC13A46BA5006A21BD /* SendNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendNotificationController.m; sourceTree = "<group>"; };
+		48CADFED13A46BA5006A21BD /* SendNotificationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendNotificationController.xib; sourceTree = "<group>"; };
+		48CADFF213A4701D006A21BD /* notifotopbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifotopbar.png; sourceTree = "<group>"; };
+		48CADFF413A47185006A21BD /* SubscribeUserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeUserController.h; sourceTree = "<group>"; };
+		48CADFF513A47185006A21BD /* SubscribeUserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeUserController.m; sourceTree = "<group>"; };
+		48CADFF613A47185006A21BD /* SubscribeUserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubscribeUserController.xib; sourceTree = "<group>"; };
+		48CADFF913A471A9006A21BD /* SendMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageController.h; sourceTree = "<group>"; };
+		48CADFFA13A471A9006A21BD /* SendMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageController.m; sourceTree = "<group>"; };
+		48CADFFB13A471A9006A21BD /* SendMessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendMessageController.xib; sourceTree = "<group>"; };
+		48CAE00313A476C0006A21BD /* SubscribeUserRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeUserRequest.h; sourceTree = "<group>"; };
+		48CAE00413A476C0006A21BD /* SubscribeUserRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeUserRequest.m; sourceTree = "<group>"; };
+		48CAE00613A47722006A21BD /* SendNotificationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendNotificationRequest.h; sourceTree = "<group>"; };
+		48CAE00713A47722006A21BD /* SendNotificationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendNotificationRequest.m; sourceTree = "<group>"; };
+		48CAE00913A477CA006A21BD /* SendMessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageRequest.h; sourceTree = "<group>"; };
+		48CAE00A13A477CA006A21BD /* SendMessageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageRequest.m; sourceTree = "<group>"; };
+		48CF012313A4560400B0E4B4 /* UIColor+DigitalColorMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DigitalColorMeter.h"; sourceTree = "<group>"; };
+		48CF012413A4560400B0E4B4 /* UIColor+DigitalColorMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DigitalColorMeter.m"; sourceTree = "<group>"; };
+		48CF012613A4569100B0E4B4 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		48CF012713A4569100B0E4B4 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		48CF012813A4569100B0E4B4 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		48CF012913A4569100B0E4B4 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		48CF012A13A4569100B0E4B4 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		48CF012B13A4569100B0E4B4 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		48CF012C13A4569100B0E4B4 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		48CF012D13A4569100B0E4B4 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		48CF012E13A4569100B0E4B4 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		48CF012F13A4569100B0E4B4 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		48CF013013A4569100B0E4B4 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		48CF013113A4569100B0E4B4 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		48CF013213A4569100B0E4B4 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		48CF013313A4569100B0E4B4 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		48CF013413A4569100B0E4B4 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		48CF013513A4569100B0E4B4 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		48CF013613A4569100B0E4B4 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		48CF013713A4569100B0E4B4 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		48CF013813A4569100B0E4B4 /* ReachabilityHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityHelper.m; sourceTree = "<group>"; };
+		48CF013913A4569100B0E4B4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		48CF013A13A4569100B0E4B4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		48CF013B13A4569100B0E4B4 /* ReachabilityHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityHelper.h; sourceTree = "<group>"; };
+		48CF014813A4574300B0E4B4 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
+		48CF014913A4574300B0E4B4 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
+		48CF014B13A4574300B0E4B4 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
+		48CF014C13A4574300B0E4B4 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
+		48CF014D13A4574300B0E4B4 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
+		48CF014E13A4574300B0E4B4 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
+		48CF014F13A4574300B0E4B4 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		48CF015013A4574300B0E4B4 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		48CF015113A4574300B0E4B4 /* NSScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSScanner_Extensions.h; sourceTree = "<group>"; };
+		48CF015213A4574300B0E4B4 /* NSScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSScanner_Extensions.m; sourceTree = "<group>"; };
+		48CF015413A4574300B0E4B4 /* CJSONDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDataSerializer.h; sourceTree = "<group>"; };
+		48CF015513A4574300B0E4B4 /* CJSONDataSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDataSerializer.m; sourceTree = "<group>"; };
+		48CF015613A4574300B0E4B4 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		48CF015713A4574300B0E4B4 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		48CF015813A4574300B0E4B4 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
+		48CF015913A4574300B0E4B4 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
+		48CF015A13A4574300B0E4B4 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		48CF015B13A4574300B0E4B4 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		48CF015C13A4574300B0E4B4 /* CSerializedJSONData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSerializedJSONData.h; sourceTree = "<group>"; };
+		48CF015D13A4574300B0E4B4 /* CSerializedJSONData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSerializedJSONData.m; sourceTree = "<group>"; };
+		48CF016813A45A1E00B0E4B4 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* NotifoObjC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NotifoObjC-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				486C9232128F3BAB000052EB /* CFNetwork.framework in Frameworks */,
+				486C923B128F3BD7000052EB /* libz.1.2.3.dylib in Frameworks */,
+				486C923D128F3BE3000052EB /* SystemConfiguration.framework in Frameworks */,
+				486C9241128F3BEE000052EB /* MobileCoreServices.framework in Frameworks */,
+				486C9329128F4FFF000052EB /* libxml2.dylib in Frameworks */,
+				486C944C128F68C5000052EB /* libobjc.A.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				48CADFFE13A475CB006A21BD /* NotifoAPI */,
+				48CADFE413A46B21006A21BD /* Examples */,
+				1D3623240D0F684500981E51 /* NotifoObjCAppDelegate.h */,
+				1D3623250D0F684500981E51 /* NotifoObjCAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* NotifoObjCViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* NotifoObjCViewController.m */,
+				2899E5210DE3E06400AC0155 /* NotifoObjCViewController.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* NotifoObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* NotifoObjC_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48CADFF213A4701D006A21BD /* notifotopbar.png */,
+				48CADFE213A4699C006A21BD /* notifobottom.png */,
+				48CADF9F13A46480006A21BD /* notifotop.png */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* NotifoObjC-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				486C944B128F68C5000052EB /* libobjc.A.dylib */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				486C9231128F3BAB000052EB /* CFNetwork.framework */,
+				486C923A128F3BD7000052EB /* libz.1.2.3.dylib */,
+				486C923C128F3BE3000052EB /* SystemConfiguration.framework */,
+				486C9240128F3BEE000052EB /* MobileCoreServices.framework */,
+				486C9328128F4FFF000052EB /* libxml2.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		486C91BC128F3AB0000052EB /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				48CF016813A45A1E00B0E4B4 /* ASIProgressDelegate.h */,
+				48CF012613A4569100B0E4B4 /* ASIAuthenticationDialog.m */,
+				48CF012713A4569100B0E4B4 /* ASIDataDecompressor.m */,
+				48CF012813A4569100B0E4B4 /* ASIFormDataRequest.m */,
+				48CF012913A4569100B0E4B4 /* ASIDataCompressor.m */,
+				48CF012A13A4569100B0E4B4 /* ASIInputStream.m */,
+				48CF012B13A4569100B0E4B4 /* ASIHTTPRequest.m */,
+				48CF012C13A4569100B0E4B4 /* ASIHTTPRequest.h */,
+				48CF012D13A4569100B0E4B4 /* ASIDownloadCache.m */,
+				48CF012E13A4569100B0E4B4 /* ASIHTTPRequestDelegate.h */,
+				48CF012F13A4569100B0E4B4 /* ASINetworkQueue.h */,
+				48CF013013A4569100B0E4B4 /* ASIInputStream.h */,
+				48CF013113A4569100B0E4B4 /* ASIHTTPRequestConfig.h */,
+				48CF013213A4569100B0E4B4 /* ASIFormDataRequest.h */,
+				48CF013313A4569100B0E4B4 /* ASIDownloadCache.h */,
+				48CF013413A4569100B0E4B4 /* ASIDataDecompressor.h */,
+				48CF013513A4569100B0E4B4 /* ASIDataCompressor.h */,
+				48CF013613A4569100B0E4B4 /* ASICacheDelegate.h */,
+				48CF013713A4569100B0E4B4 /* ASIAuthenticationDialog.h */,
+				48CF013813A4569100B0E4B4 /* ReachabilityHelper.m */,
+				48CF013913A4569100B0E4B4 /* Reachability.m */,
+				48CF013A13A4569100B0E4B4 /* Reachability.h */,
+				48CF013B13A4569100B0E4B4 /* ReachabilityHelper.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		48CADF8F13A45EE5006A21BD /* NotifoNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				48CADF9B13A4618A006A21BD /* UINavigationBar+CustomBackground.h */,
+				48CADF9C13A4618A006A21BD /* UINavigationBar+CustomBackground.m */,
+			);
+			name = NotifoNavBar;
+			sourceTree = "<group>";
+		};
+		48CADFE413A46B21006A21BD /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				48CADFE713A46B6C006A21BD /* SendMessage */,
+				48CADFE613A46B5F006A21BD /* SubscribeUser */,
+				48CADFE513A46B4E006A21BD /* SendNotification */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		48CADFE513A46B4E006A21BD /* SendNotification */ = {
+			isa = PBXGroup;
+			children = (
+				48CADFEB13A46BA5006A21BD /* SendNotificationController.h */,
+				48CADFEC13A46BA5006A21BD /* SendNotificationController.m */,
+				48CADFED13A46BA5006A21BD /* SendNotificationController.xib */,
+			);
+			name = SendNotification;
+			sourceTree = "<group>";
+		};
+		48CADFE613A46B5F006A21BD /* SubscribeUser */ = {
+			isa = PBXGroup;
+			children = (
+				48CADFF413A47185006A21BD /* SubscribeUserController.h */,
+				48CADFF513A47185006A21BD /* SubscribeUserController.m */,
+				48CADFF613A47185006A21BD /* SubscribeUserController.xib */,
+			);
+			name = SubscribeUser;
+			sourceTree = "<group>";
+		};
+		48CADFE713A46B6C006A21BD /* SendMessage */ = {
+			isa = PBXGroup;
+			children = (
+				48CADFF913A471A9006A21BD /* SendMessageController.h */,
+				48CADFFA13A471A9006A21BD /* SendMessageController.m */,
+				48CADFFB13A471A9006A21BD /* SendMessageController.xib */,
+			);
+			name = SendMessage;
+			sourceTree = "<group>";
+		};
+		48CADFFE13A475CB006A21BD /* NotifoAPI */ = {
+			isa = PBXGroup;
+			children = (
+				48CADFFF13A47621006A21BD /* Requests */,
+				484AB6B8128E774A00ADB9F5 /* NotifoClient.h */,
+				484AB6B9128E774A00ADB9F5 /* NotifoClient.m */,
+				486C9331128F52D7000052EB /* NotifoResponse.h */,
+				486C9332128F52D7000052EB /* NotifoResponse.m */,
+				48CF012113A455DD00B0E4B4 /* Helper Classes */,
+			);
+			name = NotifoAPI;
+			sourceTree = "<group>";
+		};
+		48CADFFF13A47621006A21BD /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				486C943E128F678E000052EB /* NotifoRequest.h */,
+				486C943F128F678E000052EB /* NotifoRequest.m */,
+				48CAE00213A47664006A21BD /* SendMessageRequest */,
+				48CAE00113A47653006A21BD /* SubscribeUserRequest */,
+				48CAE00013A47635006A21BD /* SendNotificationRequest */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		48CAE00013A47635006A21BD /* SendNotificationRequest */ = {
+			isa = PBXGroup;
+			children = (
+				48CAE00613A47722006A21BD /* SendNotificationRequest.h */,
+				48CAE00713A47722006A21BD /* SendNotificationRequest.m */,
+			);
+			name = SendNotificationRequest;
+			sourceTree = "<group>";
+		};
+		48CAE00113A47653006A21BD /* SubscribeUserRequest */ = {
+			isa = PBXGroup;
+			children = (
+				48CAE00313A476C0006A21BD /* SubscribeUserRequest.h */,
+				48CAE00413A476C0006A21BD /* SubscribeUserRequest.m */,
+			);
+			name = SubscribeUserRequest;
+			sourceTree = "<group>";
+		};
+		48CAE00213A47664006A21BD /* SendMessageRequest */ = {
+			isa = PBXGroup;
+			children = (
+				48CAE00913A477CA006A21BD /* SendMessageRequest.h */,
+				48CAE00A13A477CA006A21BD /* SendMessageRequest.m */,
+			);
+			name = SendMessageRequest;
+			sourceTree = "<group>";
+		};
+		48CF012113A455DD00B0E4B4 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				48CADF8F13A45EE5006A21BD /* NotifoNavBar */,
+				48CF014613A4574300B0E4B4 /* TouchJSON */,
+				48CF012213A455ED00B0E4B4 /* UIColor+DigitalColorMeter */,
+				486C91BC128F3AB0000052EB /* ASIHTTPRequest */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		48CF012213A455ED00B0E4B4 /* UIColor+DigitalColorMeter */ = {
+			isa = PBXGroup;
+			children = (
+				48CF012313A4560400B0E4B4 /* UIColor+DigitalColorMeter.h */,
+				48CF012413A4560400B0E4B4 /* UIColor+DigitalColorMeter.m */,
+			);
+			name = "UIColor+DigitalColorMeter";
+			sourceTree = "<group>";
+		};
+		48CF014613A4574300B0E4B4 /* TouchJSON */ = {
+			isa = PBXGroup;
+			children = (
+				48CF014713A4574300B0E4B4 /* Source */,
+			);
+			path = TouchJSON;
+			sourceTree = "<group>";
+		};
+		48CF014713A4574300B0E4B4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				48CF014813A4574300B0E4B4 /* CDataScanner.h */,
+				48CF014913A4574300B0E4B4 /* CDataScanner.m */,
+				48CF014A13A4574300B0E4B4 /* Extensions */,
+				48CF015313A4574300B0E4B4 /* JSON */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		48CF014A13A4574300B0E4B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				48CF014B13A4574300B0E4B4 /* CDataScanner_Extensions.h */,
+				48CF014C13A4574300B0E4B4 /* CDataScanner_Extensions.m */,
+				48CF014D13A4574300B0E4B4 /* NSCharacterSet_Extensions.h */,
+				48CF014E13A4574300B0E4B4 /* NSCharacterSet_Extensions.m */,
+				48CF014F13A4574300B0E4B4 /* NSDictionary_JSONExtensions.h */,
+				48CF015013A4574300B0E4B4 /* NSDictionary_JSONExtensions.m */,
+				48CF015113A4574300B0E4B4 /* NSScanner_Extensions.h */,
+				48CF015213A4574300B0E4B4 /* NSScanner_Extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		48CF015313A4574300B0E4B4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				48CF015413A4574300B0E4B4 /* CJSONDataSerializer.h */,
+				48CF015513A4574300B0E4B4 /* CJSONDataSerializer.m */,
+				48CF015613A4574300B0E4B4 /* CJSONDeserializer.h */,
+				48CF015713A4574300B0E4B4 /* CJSONDeserializer.m */,
+				48CF015813A4574300B0E4B4 /* CJSONScanner.h */,
+				48CF015913A4574300B0E4B4 /* CJSONScanner.m */,
+				48CF015A13A4574300B0E4B4 /* CJSONSerializer.h */,
+				48CF015B13A4574300B0E4B4 /* CJSONSerializer.m */,
+				48CF015C13A4574300B0E4B4 /* CSerializedJSONData.h */,
+				48CF015D13A4574300B0E4B4 /* CSerializedJSONData.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* NotifoObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "NotifoObjC" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotifoObjC;
+			productName = NotifoObjC;
+			productReference = 1D6058910D05DD3D006BFB54 /* NotifoObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NotifoObjC" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* NotifoObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* NotifoObjCViewController.xib in Resources */,
+				48CADFA113A46480006A21BD /* notifotop.png in Resources */,
+				48CADFE313A4699C006A21BD /* notifobottom.png in Resources */,
+				48CADFEF13A46BA5006A21BD /* SendNotificationController.xib in Resources */,
+				48CADFF313A4701D006A21BD /* notifotopbar.png in Resources */,
+				48CADFF813A47185006A21BD /* SubscribeUserController.xib in Resources */,
+				48CADFFD13A471A9006A21BD /* SendMessageController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* NotifoObjCAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* NotifoObjCViewController.m in Sources */,
+				484AB6BA128E774A00ADB9F5 /* NotifoClient.m in Sources */,
+				486C9333128F52D7000052EB /* NotifoResponse.m in Sources */,
+				486C9440128F678E000052EB /* NotifoRequest.m in Sources */,
+				48CF012513A4560400B0E4B4 /* UIColor+DigitalColorMeter.m in Sources */,
+				48CF013C13A4569100B0E4B4 /* ASIAuthenticationDialog.m in Sources */,
+				48CF013D13A4569100B0E4B4 /* ASIDataDecompressor.m in Sources */,
+				48CF013E13A4569100B0E4B4 /* ASIFormDataRequest.m in Sources */,
+				48CF013F13A4569100B0E4B4 /* ASIDataCompressor.m in Sources */,
+				48CF014013A4569100B0E4B4 /* ASIInputStream.m in Sources */,
+				48CF014113A4569100B0E4B4 /* ASIHTTPRequest.m in Sources */,
+				48CF014213A4569100B0E4B4 /* ASIDownloadCache.m in Sources */,
+				48CF014313A4569100B0E4B4 /* ReachabilityHelper.m in Sources */,
+				48CF014413A4569100B0E4B4 /* Reachability.m in Sources */,
+				48CF015E13A4574300B0E4B4 /* CDataScanner.m in Sources */,
+				48CF015F13A4574300B0E4B4 /* CDataScanner_Extensions.m in Sources */,
+				48CF016013A4574300B0E4B4 /* NSCharacterSet_Extensions.m in Sources */,
+				48CF016113A4574300B0E4B4 /* NSDictionary_JSONExtensions.m in Sources */,
+				48CF016213A4574300B0E4B4 /* NSScanner_Extensions.m in Sources */,
+				48CF016313A4574300B0E4B4 /* CJSONDataSerializer.m in Sources */,
+				48CF016413A4574300B0E4B4 /* CJSONDeserializer.m in Sources */,
+				48CF016513A4574300B0E4B4 /* CJSONScanner.m in Sources */,
+				48CF016613A4574300B0E4B4 /* CJSONSerializer.m in Sources */,
+				48CF016713A4574300B0E4B4 /* CSerializedJSONData.m in Sources */,
+				48CADF9D13A4618A006A21BD /* UINavigationBar+CustomBackground.m in Sources */,
+				48CADFEE13A46BA5006A21BD /* SendNotificationController.m in Sources */,
+				48CADFF713A47185006A21BD /* SubscribeUserController.m in Sources */,
+				48CADFFC13A471A9006A21BD /* SendMessageController.m in Sources */,
+				48CAE00513A476C0006A21BD /* SubscribeUserRequest.m in Sources */,
+				48CAE00813A47722006A21BD /* SendNotificationRequest.m in Sources */,
+				48CAE00B13A477CA006A21BD /* SendMessageRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NotifoObjC_Prefix.pch;
+				INFOPLIST_FILE = "NotifoObjC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = NotifoObjC;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NotifoObjC_Prefix.pch;
+				INFOPLIST_FILE = "NotifoObjC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = NotifoObjC;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "NotifoObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "NotifoObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
